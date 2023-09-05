@@ -6,6 +6,9 @@ import sys
 import sklearn
 import pymongo
 import pandas as pd
+import tqdm
+import pyfiglet
+import time
 
 @dataclass
 class DataIngestionConfig:
@@ -47,7 +50,7 @@ class DataIngestion:
                 data.append(document)
 
             logger.info("Data Comversion Successfull")
-            
+
             
             return data
         
@@ -87,7 +90,7 @@ class DataIngestion:
 
             self.DataFrame=DataFrame
 
-            self.DataFrame.to_csv(os.path.join(os.getcwd()+"/resource/data.csv"))
+            self.DataFrame.to_csv(os.path.join(os.getcwd()+"/resource/data.csv"),index=False,header=True)
 
             logger.info("Successfully saved CSV")
 
@@ -100,24 +103,39 @@ class DataIngestion:
 
 
 def initialize_data_ingestion():
+
+
     try:
+
+        progress_bar=tqdm.tqdm(total=4)
 
         logger.info("Data Ingestion Has Been Initialized")
 
         obj=DataIngestion()
+        progress_bar.update(1)
 
         data=obj.fetch_from_pymongo()
+        progress_bar.update(1)
 
         data=list(data)
         
         DataFrame=obj.read_into_DataFrame(data)
+        progress_bar.update(1)
         
         obj.save_csv(DataFrame)
 
         logger.info("Successfully Initiated and Finished the Data Ingestion Process")
 
+        progress_bar.update(1)
+        progress_bar.close()
+
+        word=pyfiglet.figlet_format("Data Ingestion Successful")
+        print(word)
+
     except Exception as e:
         print(e)
+
+
 
 
 if __name__=="__main__":
