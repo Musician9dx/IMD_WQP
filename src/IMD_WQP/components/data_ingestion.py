@@ -130,7 +130,11 @@ def initialize_data_ingestion():
         progress_bar.close()
 
         word=pyfiglet.figlet_format("Data Ingestion Successful")
+        print('\n','\n')
+
         print(word)
+
+        print('\n','\n')
 
     except Exception as e:
         print(e)
@@ -138,8 +142,6 @@ def initialize_data_ingestion():
 
 
 
-if __name__=="__main__":
-    initialize_data_ingestion()
 
 
 

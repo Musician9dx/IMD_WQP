@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Educational registration form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <style>
+      html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, select, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 16px;
+      color: #eee;
+      }
+      body {
+      background: url("https://images.unsplash.com/photo-1611174743420-3d7df880ce32?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=1080&ixid=MnwxfDB8MXxyYW5kb218MHx8d2hpc2tleXx8fHx8fDE2OTQwMTAwODQ&ixlib=rb-4.0.3&q=80&w=1920") no-repeat center;
+      background-size: cover;
+      }
+      h1, h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      }
+      h2 {
+      margin: 0 0 0 8px;
+      }
+      .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      padding: 25px;
+      background: rgba(12, 12, 12, 0.5); 
+      }
+      .left-part, form {
+      padding: 25px;
+      }
+      .left-part {
+      text-align: center;
+      }
+      .fa-graduation-cap {
+      font-size: 72px;
+      }
+      form {
+      border-radius: 10px;
+      background: rgba(67, 62, 62, 0.7); 
+      }
+      
+      .title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      }
+      .info {
+      display: flex;
+      flex-direction: column;
+      }
+      input, select {
+      padding: 5px;
+      margin-bottom: 30px;
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #eee;
+      }
+      input::placeholder {
+      color: #eee;
+      }
+      option:focus {
+      border: none;
+      }
+      option {
+      background: rgb(0, 0, 0); 
+      border: none;
+      }
+      .checkbox input {
+      margin: 0 10px 0 0;
+      vertical-align: middle;
+      }
+      .checkbox a {
+      color: #26a9e0;
+      }
+      .checkbox a:hover {
+      color: #85d6de;
+      }
+      .btn-item, button {
+      padding: 10px 5px;
+      margin-top: 20px;
+      border-radius: 5px; 
+      border: none;
+      background: #1f2020; 
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      color: #fff;
+      }
+      .btn-item {
+      display: inline-block;
+      margin: 20px 5px 0;
+      }
+      button {
+      width: 100%;
+      }
+      button:hover, .btn-item:hover {
+      background: #44d075;
+      transition:0.5s
+      }
+      @media (min-width: 568px) {
+      html, body {
+      height: 100%;
+      }
+      .main-block {
+      flex-direction: row;
+      height: calc(100% - 50px);
+      }
+      .left-part, form {
+      flex: 1;
+      height: auto;
+      }
+      }
+      
+
+      .flexi{
+
+        display: flex;
+        flex: auto;
+        justify-content: space-between;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+
+      .beer{
+        width: 300px;
+        border-radius: 10px;
+      }
+      *{
+        font-family: 'Montserrat', sans-serif;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-block">
+      <div class="left-part">
+        <img class="beer" src="https://images.unsplash.com/photo-1614377149935-db5df077acf8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=700&ixid=MnwxfDB8MXxyYW5kb218MHx8YmVlcnx8fHx8fDE2OTQwMTAxNjg&ixlib=rb-4.0.3&q=80&w=900" alt="">
+        <h1 >Wine Type and Quality Predictor</h1>
+        <p>Smoking and Drinking Is Injurious to health and might cause cancer</p>
+        <div class="btn-group">
+          <button class="btn-item">Retrain Model</button>
+        </div>
+      </div>
+      <form action="/result">
+        <div class="title">
+            <i class='fas fa-wine-bottle'></i>
+
+          <h2>Model Predictions</h2>
+        </div>
+        <p>It's wine</p>
+
+        <p>With a quality index of</p>
+        <div class="info">
+
+
+      </form>
+    </div>
+  </body>
+</html>

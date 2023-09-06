@@ -1,0 +1,60 @@
+{
+  "build": "h2bbff1b_0",
+  "build_number": 0,
+  "channel": "https://repo.anaconda.com/pkgs/main/win-64",
+  "constrains": [],
+  "depends": [
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012,<15.0a0"
+  ],
+  "extracted_package_dir": "C:\\Users\\Svbeh\\.conda\\pkgs\\utf8proc-2.6.1-h2bbff1b_0",
+  "files": [
+    "Library/bin/utf8proc.dll",
+    "Library/include/utf8proc.h",
+    "Library/lib/utf8proc.lib"
+  ],
+  "fn": "utf8proc-2.6.1-h2bbff1b_0.conda",
+  "legacy_bz2_md5": "150c8148017ae3461951cc919e317f92",
+  "license": "MIT",
+  "license_family": "MIT",
+  "link": {
+    "source": "C:\\Users\\Svbeh\\.conda\\pkgs\\utf8proc-2.6.1-h2bbff1b_0",
+    "type": 1
+  },
+  "md5": "32894438023c8a0a7f7b84f069d85132",
+  "name": "utf8proc",
+  "package_tarball_full_path": "C:\\Users\\Svbeh\\.conda\\pkgs\\utf8proc-2.6.1-h2bbff1b_0.conda",
+  "paths_data": {
+    "paths": [
+      {
+        "_path": "Library/bin/utf8proc.dll",
+        "path_type": "hardlink",
+        "sha256": "139c5c1a027683204585c6e6ed140ef7c6d14c6eda02ab2266b3d2de723fbd79",
+        "sha256_in_prefix": "139c5c1a027683204585c6e6ed140ef7c6d14c6eda02ab2266b3d2de723fbd79",
+        "size_in_bytes": 339968
+      },
+      {
+        "_path": "Library/include/utf8proc.h",
+        "path_type": "hardlink",
+        "sha256": "01958a0a4c23c17aeb20a9a297df61b8541dd87aa90d04007e2742fd8eed3269",
+        "sha256_in_prefix": "01958a0a4c23c17aeb20a9a297df61b8541dd87aa90d04007e2742fd8eed3269",
+        "size_in_bytes": 31001
+      },
+      {
+        "_path": "Library/lib/utf8proc.lib",
+        "path_type": "hardlink",
+        "sha256": "dedfb1bd75b38316994b06087e6e938660727185e8da818ad4dda0f161f050fd",
+        "sha256_in_prefix": "dedfb1bd75b38316994b06087e6e938660727185e8da818ad4dda0f161f050fd",
+        "size_in_bytes": 8086
+      }
+    ],
+    "paths_version": 1
+  },
+  "requested_spec": "None",
+  "sha256": "fe85b80713d2dbe8cfc29ee63e744af6f3401f2fcfd370609fd21b9da62f0dcf",
+  "size": 319167,
+  "subdir": "win-64",
+  "timestamp": 1611836198527,
+  "url": "https://repo.anaconda.com/pkgs/main/win-64/utf8proc-2.6.1-h2bbff1b_0.conda",
+  "version": "2.6.1"
+}

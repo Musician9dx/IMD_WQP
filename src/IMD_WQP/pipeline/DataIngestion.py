@@ -1,0 +1,3 @@
+from IMD_WQP.components.data_ingestion import initialize_data_ingestion
+
+data_ingestion=initialize_data_ingestion

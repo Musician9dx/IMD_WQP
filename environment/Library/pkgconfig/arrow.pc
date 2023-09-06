@@ -1,0 +1,34 @@
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+#
+#   http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+# KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+
+prefix=D:/INeuron/IMD_WQP/environment/Library
+includedir=${prefix}/include
+libdir=D:/INeuron/IMD_WQP/environment/Library
+
+so_version=1100
+abi_version=1100
+full_so_version=1100.0.0
+
+Name: Apache Arrow
+Description: Arrow is a set of technologies that enable big-data systems to process and move data fast.
+Version: 11.0.0
+Requires:
+Requires.private: openssl
+Libs: -L${libdir} -larrow
+Libs.private: D:/INeuron/IMD_WQP/environment/Library/lib/snappy_static.lib D:/INeuron/IMD_WQP/environment/Library/bin/re2.dll D:/INeuron/IMD_WQP/environment/Library/lib/bzip2.lib D:/INeuron/IMD_WQP/environment/Library/bin/aws-cpp-sdk-config.dll D:/INeuron/IMD_WQP/environment/Library/bin/aws-cpp-sdk-transfer.dll D:/INeuron/IMD_WQP/environment/Library/bin/aws-cpp-sdk-identity-management.dll D:/INeuron/IMD_WQP/environment/Library/bin/aws-cpp-sdk-cognito-identity.dll D:/INeuron/IMD_WQP/environment/Library/bin/aws-cpp-sdk-sts.dll D:/INeuron/IMD_WQP/environment/Library/bin/aws-cpp-sdk-s3.dll D:/INeuron/IMD_WQP/environment/Library/bin/aws-cpp-sdk-core.dll
+Cflags: -I${includedir}
+Cflags.private: -DARROW_STATIC
