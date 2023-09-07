@@ -13,6 +13,9 @@ col3,col4=st.columns(2)
 with col3:
     st.title("Wine Type & Quality Predictor")
 
+with col4:
+    st.caption("This Is Just a Developer Project and developer Is no way responsible for any injuries or harm caused due to predictions of this neural network. The Developer doesn't encourage anyone to drink Alchohol.")
+
 col1,col2=st.columns(2)
 
 col5,col6=st.columns(2)
